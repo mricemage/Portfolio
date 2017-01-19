@@ -26,14 +26,14 @@
       <a class="item">
       Thang Ho
     </a>
-    <a class="active item">
+    <a class="item" data-tab="zero" href="index.html">
       Home
     </a>
     <div class="ui pointing dropdown link item">
     <span class="text">Labs</span>
     <i class="dropdown icon"></i>
     <div class="ui tabular menu">
-        <div class="active item" data-tab="first">Lab 1</div>
+        <div class="item" data-tab="first">Lab 1</div>
         <div class="item" data-tab="second">Lab 2</div>
         <div class="item">Lab 3</div>
         <div class="item">Lab 4</div>
@@ -43,13 +43,13 @@
         </div>
     </div>
     <a class="item">
-      Friends
+      About me
     </a>
     </div>
   </div>
 </div>
 
-<div class="ui raised very padded text container segment">
+<div class="ui tab  very padded text container segment active" data-tab="zero">
   <h2 class="ui header">This is Thang Ho Portfolio</h2>
   <p>Welcome to my Portfolio. This is where I put my lab assignments, please click on Lab tab to see the content of every lab.</p>
   <p>The Portfolio is created through the time I have been learning in Interactive Multimedia Programming course.</p>
@@ -57,8 +57,8 @@
 <!-- Lab 1 -->
     <div class="ui center container segment tab" data-tab="first">
         <h1 class="ui header left">Lab 1 </h1>
-        <p>1. Definitions:<br>
-Write descriptions / definitions of these topics. Please, do not copy paste. Use your own
+        <h4 class="ui header left">1. Definitions:</h4>
+<p>Write descriptions / definitions of these topics. Please, do not copy paste. Use your own
 words and make sure that you understand everything you write.<br>
 a. HTML<br>
 b. CSS<br>
@@ -116,10 +116,53 @@ CSS is a tool to define the Websites, it is used by several organizations to mak
     <div class="content">
       <p class="transition hidden">DHTML stands for Dynamic HTML. It is defined by a website which has the combination of HTML, CSS and DOM (Document Object Model).<br>
     DHTML is used to create an application on the website: such as creating a website interacting with the user, or creating an assignment for e-learning (online learning).</p>
-      </div>
+      </div>  
   </div>
 </div>
+    <!-- Lab 1 / Exercise 2 -->
+    <h4 class="ui header left">2. Code conventions</h4>
+
+    Write down what is your understanding of the coding conventions. Why they are important to follow? What kind of conventions you are going to use. </p>
+    <div class="ui inverted segment">
+        <p> Code Convention (CC) is a combination of the regulations to bind the coding progress of a project. It is a set of guidelines for a specific programming language that recommend programming style, practices, and methods for each aspect of a program written in that language.</p>
+
+        <p>CC is important to follow because it creates the consistency and readablity of the project/software, allowing the engineers to understand the new code more quickly and thoroughly. </p>
+
+        <p> Kind of conventions I follow are: </p>
+
+        <div class="ui bulleted list">
+                <div class="item"> Character encoding [ HTML ]: Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding. <br>
+                            When doing so, you may avoid using character entities in your HTML, provided their encoding matches that of the document (generally UTF-8).             
+                 </div>
+                <img src="images/characterencoding.JPG">
+                <div class="item"> Reducing markup [ HTML ]: Whenever possible, avoid superfluous parent elements when writing HTML. <br>
+                Many times this requires iteration and refactoring, but produces less HTML. Take the following example:
+                </div>
+                <img src="images/reducingmarkup.JPG">
+                <div class="item"> Don't use @import, instead of that using &lt;link&gt; elements. </div>
+                <img src="images/dontuseimport.JPG">
+                
+            </div>
     </div>
+
+    <!-- Lab 1 / Exercise 3 -->
+    <h4 class="ui header left">3. HTML5 </h4>
+    a. Create a simple HTML5 document. Please do not copy paste, and remember to
+    follow coding conventions. <br>
+
+    b. Modify previous document so that you will have an external css file with styles and Javascript file.
+
+    <div class="ui inverted segment">
+            Click <a href="html5.html">here </a> to view the HTML5 example
+        </div>
+
+
+    </div> <!-- Div này rất quan trọng -->
+    
+
+
+
+
 <!-- End of Lab 1 -->
 
 <!-- Lab 2 -->

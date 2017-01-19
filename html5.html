@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="HTML/html5.css">
+    <link rel="stylesheet" href="semantic/dist/components/accordion.js">
+    <link rel="stylesheet" href="semantic/dist/semantic.js">
+    <link rel="stylesheet" href="semantic/dist/semantic.min.js">
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+</head>
+
+
+<body>
+<div class="login-page">
+  <div class="form">
+
+      Feedback System<br><br>
+    <form class="register-form">
+      <input type="text" placeholder="Your name" required/>
+      
+      <input type="email" placeholder="Email address" required/>
+
+      <input type="number" placeholder="Your score (1 - 10)" min="0" max="10" required/>
+
+      <input type="text" placeholder="Your comment"/>
+      <button id="modalappear" onclick="$('.basic.modal').modal('show');">Send us</button>
+      <p class="message">Your feedback is really important to us!</p>
+    </form>
+   
+  </div>
+</div>
+
+<div class="ui basic modal">
+  <div class="ui icon header">
+    <i class="archive icon"></i>
+    Thank you for your feedback!
+  </div>
+  <div class="ui center aligned content">
+    <p class="center aligned">Your message (feedback) has been sent! We would like to thank you, again!</p>
+  </div>
+    <div class="ui blue ok inverted button">
+      <a class="checkmark icon" href="index.html">
+      OK
+    </div>
+  </div>
+</div>
+    
+    
+    
+    
+    
+    
+   <!-- script -->
+   <!-- <script>
+    $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+   </script> -->
+
+   <script>
+ $(document).ready(function(){
+  $("#modalappear").click(function(){
+  $('.ui.modal')
+  .modal('show')
+;
+  });
+});
+   </script>
+    
+    
+    
+    
+    </body>
+
+</html>
