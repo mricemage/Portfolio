@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.85, maximum-scale=0.85, user-scalable=no"/>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    
+
+    <link rel="stylesheet" href="css/personlist.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <script>
+    $(document).ready(function(){
+        $("#go").click(function(){
+            $("#p_list").append( $("#yourname" ).val() + "<br>" );
+
+        });
+            
+    });
+    
+    </script>
+   
+    
+    <title>Person List</title>
+
+    
+</head>
+
+<body>
+<h1> Person List with jQuery </h1>
+
+<h2> Exercise from Interactive Multimedia Programming </h2>
+<hr>
+
+    <div class="container">
+            Type here: <input type="text" name="name" placeholder="Your name" id="yourname">
+            <button class="myButton" id="go"> Go! </button> <br>
+            <a href="index.html"> Go back to main </a>
+
+            
+
+            <p id="p_list"></p>
+        </div>
+        
+</body>
+<footer>
+All right reserved 2017
+    </footer>
+
+</html>
