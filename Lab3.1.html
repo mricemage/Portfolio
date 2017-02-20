@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lab3.1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script>
+    var connection = new WebSocket("ws://obscure-waters-98157.herokuapp.com");
+
+connection.onError = function(error)
+{
+    console.log("Error in socket:" + error);
+}
+
+connection.onmessage = function(message)
+{
+  console.log("New Message:" + message.data);
+  document.getElementById("chat").innerHTML += "<br>" + message.data;
+  
+}
+
+var sendData = function ()
+{
+// connection.onopen = function(){
+     var a = document.getElementById("a").value;
+     connection.send(a);
+// }
+
+}
+
+
+    </script>
+    <title>Web Chat client</title>
+  </head>
+  <body>
+      <div id="webchat">
+        <div class="displaymessage">
+        <p id="chat"></p>
+       
+        </div><br>
+        
+            <input class="form-control" id="a" type="text" placeholder="Type your message here"><br>
+            <input type="button" onclick="sendData()" value="Send" class="btn btn-success" style="margin-left: 3%;">
+            <a href="index.html"> Return to main page </a>
+            
+    </div>
+
+
+
+  </body>
+</html>

@@ -36,7 +36,7 @@
     <div class="ui tabular menu">
         <div class="item" data-tab="first">Lab 1</div>
         <div class="item" data-tab="second">Lab 2</div>
-        <div class="item">Lab 3</div>
+        <div class="item" data-tab="third">Lab 3</div>
         <div class="item">Lab 4</div>
         <div class="item">Lab 5</div>
         <div class="item">Lab 6</div>
@@ -223,6 +223,43 @@ CSS is a tool to define the Websites, it is used by several organizations to mak
 
 <!-- End of Lab 2 -->
 
+<!-- Lab 3 -->
+<div class="ui center container segment tab" data-tab="third">
+  <h1 class="ui header left">Lab 3 </h1>
+  <strong> <p>1. Web Sockets: </p></strong>
+  <p> Read this article: <a href="http://www.html5rocks.com/en/tutorials/websockets/basics/">http://www.html5rocks.com/en/tutorials/websockets/basics/"</a> . What kind of
+problems web sockets solve? In what kind of situations you should use them? </p>
+  <p> I have created a simple chat server which can be used with web sockets. Create a web
+chat client which can be used to chat with the server. Chat server can use unencrypted or
+encrypted sockets. Protocol is very simple. Just print everything you get from the socket
+and any data you send will be considered as message. You can find it from:
+<a href="ws://obscure-waters-98157.herokuapp.com">ws://obscure-waters-98157.herokuapp.com</a> or
+<a href="wss://obscure-waters-98157.herokuapp.com">wss://obscure-waters-98157.herokuapp.com</a> </p>
+  <p> What happens if you send a message: ”LOGO”? </p>
+  <div class="ui inverted segment">
+      Click <a href="Lab3.1.html"> here </a> to go the Web Chat Client.<br>
+
+      When I sent message "LOGO", the message turned into the emoticons which were created from the symbol.
+  </div>
+  <strong> <p>2. Local Storage </p></strong>
+  <p>Read this article about local storage: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API">https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API</a> </p>
+  <p> Do all examples on the page </p>
+  <div class="ui inverted segment">
+      Click <a href="Lab3.2.html">here</a> to go the Local Storage. <br>
+      
+    </div>
+  <strong> <p>3. Audio Element </p></strong>
+  Read this article: <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video">https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video</a>
+  Create a simple web radio (stream) player. Use html5 audio element. Audio player should
+  have ”own” play / stop buttons and volume control. Don’t use standard controls in this
+  case.
+  Use for example this stream: <a href="http://stream.basso.fi:8000/stream">http://stream.basso.fi:8000/stream</a>
+  <div class="ui inverted segment">
+      Click <a href="audio.html"> here </a> to go to the audio page exercise.
+    </div>
+</div>
+
+<!-- End of Lab 3 -->
 
 <script>
     $('.ui.dropdown').dropdown();

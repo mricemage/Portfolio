@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body> 
+<div class="row">
+    <div class="col-sm-3" style="background-color:yellow; margin-left: 2%; margin-top: 2%;">
+<button onclick="playPause()" type="button" class="btn btn-success" style="margin-left: 39%; margin-top: 5%"> Play/Pause </button>
+<audio id="abc">
+<source src="http://stream.basso.fi:8000/stream" type="audio/mpeg">
+<progress id="seekbar"></progress>
+</audio> <br><br>
+<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input><br>
+<a href="index.html"> Go back to main page </a> <br><br>
+</div>
+    </div>
+<script>
+        var myAudio = document.getElementById("abc");
+        function playPause() 
+        {
+            if(myAudio.paused)
+               myAudio.play();
+            else
+               myAudio.pause();
+        }
+
+        function stop()
+        {
+            myAudio.stop();
+        }
+
+        window.SetVolume = function(val)
+{
+    
+    console.log('Before: ' + myAudio.volume);
+    myAudio.volume = val / 100;
+    console.log('After: ' + myAudio.volume);
+}
+    </script>
+
+</body>
