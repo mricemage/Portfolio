@@ -1,0 +1,74 @@
+body {
+    background-color: #aef2df;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+}
+
+hr {
+    color:black;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    max-width: 70%;
+}
+
+.container {
+    text-align: center;
+    font-size: 1em;
+}
+
+.myButton {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #88eba3), color-stop(1, #5cbf2a));
+	background:-moz-linear-gradient(top, #88eba3 5%, #5cbf2a 100%);
+	background:-webkit-linear-gradient(top, #88eba3 5%, #5cbf2a 100%);
+	background:-o-linear-gradient(top, #88eba3 5%, #5cbf2a 100%);
+	background:-ms-linear-gradient(top, #88eba3 5%, #5cbf2a 100%);
+	background:linear-gradient(to bottom, #88eba3 5%, #5cbf2a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#88eba3', endColorstr='#5cbf2a',GradientType=0);
+	background-color:#88eba3;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 9px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #2f6627;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #88eba3));
+	background:-moz-linear-gradient(top, #5cbf2a 5%, #88eba3 100%);
+	background:-webkit-linear-gradient(top, #5cbf2a 5%, #88eba3 100%);
+	background:-o-linear-gradient(top, #5cbf2a 5%, #88eba3 100%);
+	background:-ms-linear-gradient(top, #5cbf2a 5%, #88eba3 100%);
+	background:linear-gradient(to bottom, #5cbf2a 5%, #88eba3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#88eba3',GradientType=0);
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+footer {
+    font-size: 1em;
+    font-family: 'Slabo 27px', serif;
+    text-align: center;
+    margin-top: 99%;
+}
