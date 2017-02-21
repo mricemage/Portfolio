@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
@@ -25,7 +26,7 @@
   <div class="ui inverted secondary menu">
       <div class="ui container">
       <a class="item">
-      Thang Ho
+      Interactive Multimedia Programming
     </a>
     <a class="item" data-tab="zero" href="index.html">
       Home
@@ -43,17 +44,36 @@
         
         </div>
     </div>
-    <a class="item">
+   <!-- <a class="item" data-tab="aboutme">
       About me
-    </a>
+    </a> -->
     </div>
   </div>
 </div>
 
 <div class="ui tab  very padded text container segment active" data-tab="zero">
-  <h2 class="ui header">This is Thang Ho Portfolio</h2>
+  <h2 class="ui header">This is Thang Ho's Portfolio</h2>
   <p>Welcome to my Portfolio. This is where I put my lab assignments, please click on Lab tab to see the content of every lab.</p>
   <p>The Portfolio is created through the time I have been learning in Interactive Multimedia Programming course.</p>
+  <p>Here is the link to my Portfolio's github repository: <a href="https://github.com/mricemage/Portfolio">https://github.com/mricemage/Portfolio</a></p>
+</div>
+
+<div class="ui tab  very padded text container segment active" data-tab="zero">
+  <h2 class="ui header">Personal Information</h2>
+  <div class="ui items">
+  <div class="item">
+    <a class="ui tiny image">
+      <img src="images/avatar.jpg">
+    </a>
+    <div class="content">
+      <a class="header">Ho Minh Thang</a>
+      <div class="description">
+        <p>Second-year student in OAMK.</p>
+        <p>Hobbies: Coding, playing online games, surfing web, playing badminton, swimming and rooting Android devices.
+      </div>
+    </div>
+  </div>
+  </div>
 </div>
 <!-- Lab 1 -->
     <div class="ui center container segment tab" data-tab="first">
@@ -261,6 +281,29 @@ and any data you send will be considered as message. You can find it from:
 
 <!-- End of Lab 3 -->
 
+<!-- Lab 4 -->
+<div class="ui center container segment tab" data-tab="fourth">
+  <h1 class="ui header left">Lab 4 </h1>
+  <strong> <p> Very simple draw application </p> </strong>
+ Create a simple drawing application using html5 canvas element and Javascript.<br>
+See these tutorials (or find your own way):
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage">https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes"> https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes </a><br>
+Handling mouse events: <br>
+<a href="https://developer.apple.com/library/safari/documentation/AudioVideo/Conceptual/HTMLcanvas-guide/AddingMouseandTouchControlstoCanvas/AddingMouseandTouchControlstoCanvas.html">https://developer.apple.com/library/safari/documentation/AudioVideo/Conceptual/HTMLcanvas-guide/AddingMouseandTouchControlstoCanvas/AddingMouseandTouchControlstoCanvas.html</a> <br>
+
+User should be able to draw lines with mouse presses. When mouse button is pressed
+down, start point of line is saved and, when mouse button is released line will be drawn
+between start point (mouse down) and end point ( mouse up).
+
+<div class="ui inverted segment">
+      Click <a href="Lab4.html"> here </a> to go the canvas drawing.
+  </div>
+</div>
+  
+
+<!-- End of Lab 6 -->
+
 <!-- Lab 5 -->
 <div class="ui center container segment tab" data-tab="fifth">
   <h1 class="ui header left">Lab 5 </h1>
@@ -302,6 +345,7 @@ shows a list of persons (from JSON) and their email addresses as mailto-link. <b
 
 
 </div>
+</div>
   
 
 <!-- End of Lab 5 -->
@@ -326,6 +370,15 @@ shows a list of persons (from JSON) and their email addresses as mailto-link. <b
   
 
 <!-- End of Lab 6 -->
+
+<!-- About Me Tab -->
+<div class="ui center container segment tab" data-tab="aboutme">
+  <h1 class="ui header left">About me </h1>
+ 
+</div>
+  
+
+<!-- End of About me TAB-->
 
 <script>
     $('.ui.dropdown').dropdown();
